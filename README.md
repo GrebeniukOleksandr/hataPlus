@@ -1,1 +1,1 @@
-https://github.com/GrebeniukOleksandr/hataPlus.git
+https://grebeniukoleksandr.github.io/hataPlus/
