@@ -53,15 +53,15 @@ hr {
 }
 
 .wrapper {
-    margin: 0 auto;
     max-width: 960px;
+    margin: 0 auto;
 }
 
 .flex-between {
     display: flex;
     justify-content: space-between;
+    column-gap: 27px;
 }
-
 
 .align-center {
     align-items: center;
@@ -73,7 +73,10 @@ hr {
 
 .contacts a {
     color: #25252c;
+}
 
+.shadow {
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .header {
@@ -94,12 +97,15 @@ hr {
     font-size: 14px;
     text-decoration: none;
     letter-spacing: 2px;
-
+    transition: all 1s ease;
 }
 
 .header li:hover>a {
     color: #fd8300;
-    transition: all 1s ease;
+}
+
+.header li:last-child {
+    padding-right: 0;
 }
 
 .social a {
@@ -214,7 +220,7 @@ a.in:hover {
     padding: 55px 0 40px;
     text-align: center;
     align-items: center;
-    background: #000 url(../img/house.png) no-repeat center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/house.jpg) no-repeat center/cover;
 }
 
 .price p {
@@ -249,13 +255,10 @@ a.in:hover {
     font-size: 40px;
 }
 
+
 .main_padding {
     padding-top: 40px;
     padding-bottom: 46px;
-}
-
-.main {
-    max-width: 714px;
 }
 
 .main h1 {
@@ -273,13 +276,11 @@ a.in:hover {
 .main h2 {
     color: #24242b;
     font-weight: 700;
-    font-size: 24px;
     font-family: "Roboto Slab", serif;
 }
 
-.article {
+.main-width {
     max-width: 670px;
-    margin-bottom: 33px;
 }
 
 .article p {
@@ -333,10 +334,15 @@ a.in:hover {
 }
 
 .nav {
+    position: sticky;
+    top: 40px;
     min-width: 220px;
+    border-radius: 3px;
+    overflow: hidden;
 }
 
-.nav p {
+.nav p,
+th {
     margin: 0;
     padding: 13px;
     color: #ffffff;
@@ -346,13 +352,9 @@ a.in:hover {
     background-color: #1f1f56;
 }
 
+
 aside {
     position: relative;
-}
-
-.nav {
-    position: sticky;
-    top: 40px;
 }
 
 .aside {
@@ -377,7 +379,7 @@ aside {
 .aside>li>a:before {
     content: "";
     position: absolute;
-    right: 10px;
+    right: 15px;
     top: 20px;
     width: 7px;
     height: 7px;
@@ -385,6 +387,7 @@ aside {
     border-bottom: 2px solid #666666;
     box-sizing: border-box;
     transform: rotate(-45deg);
+    transition: all .5s ease;
 }
 
 .aside li:hover>a {
@@ -399,7 +402,7 @@ aside {
 .aside>li:hover>a:before {
     content: "";
     position: absolute;
-    right: 10px;
+    right: 15px;
     top: 20px;
     width: 7px;
     height: 7px;
@@ -426,7 +429,7 @@ aside {
 }
 
 .submenu li:hover>a {
-    color: #666666;
+    color: ƒ#666666;
     background-color: #cecedd;
 }
 
@@ -466,4 +469,131 @@ footer p {
     font-size: 13px;
     text-align: center;
     background-color: #dcdce6;
+}
+
+/* price.html */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 3px;
+    overflow: hidden;
+    font-family: "Arial", sans-serif;
+}
+
+th {
+    padding: 20px;
+    text-align: left;
+}
+
+th:last-child {
+    text-align: right;
+}
+
+td {
+    padding: 20px;
+    color: #666666;
+    background-color: #e4e4ec;
+    border-top: 1px solid #cecedd;
+    transition: all .5s ease;
+}
+
+td:last-child {
+    text-align: right;
+}
+
+tr:hover td {
+    color: #fff;
+    background-color: #fd8300;
+    cursor: pointer;
+}
+
+/* contacts */
+.main-contact>h2 {
+    margin: 0;
+    color: #24242b;
+    font-family: "Roboto Slab";
+}
+
+.main-form {
+    display: flex;
+    column-gap: 27px;
+    margin-top: 36px;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-nav ul li:first-child {
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+}
+
+.main-nav ul:last-child {
+    padding-right: 100px;
+}
+
+.main-menu li {
+    padding-top: 14px;
+    color: #666666;
+    font-size: 14px;
+}
+
+.main-menu li a {
+    color: #25252c;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.main-menu:first-child li:last-child a {
+    text-decoration: underline;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+form {
+    font-size: 13px;
+    color: #666666;
+}
+
+h3 {
+    margin: 0;
+}
+
+input {
+    margin-top: 10px;
+}
+
+input:first-child,
+input:nth-child(2) {
+    width: 230px;
+    height: 40px;
+}
+
+input:nth-child(3) {
+    width: 471px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.form-button {
+    margin-top: 12px;
+    margin-right: 31px;
+    padding: 10px 28px;
+    color: #fff;
+    background-color: #fd8300;
+    border-radius: 21px;
+    font-size: 14px;
+    transition: all .5s ease;
+}
+
+.form-button:hover {
+    color: #25252c;
+    background-color: #fff;
+    border-radius: 2px solid #fd8300;
+    cursor: pointer;
 }
