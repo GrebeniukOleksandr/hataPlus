@@ -602,6 +602,7 @@ textarea::placeholder {
 }
 
 .form-button {
+    margin-right: 30px;
     padding: 11px 30px;
     color: #ffffff;
     border-radius: 21px;
