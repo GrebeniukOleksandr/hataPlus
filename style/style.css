@@ -654,7 +654,7 @@ textarea::placeholder {
   content: "";
   position: absolute;
   top: 3.5px;
-  left: 3.5px;
+  left: 4px;
   width: 8px;
   height: 5px;
   border-left: 2px solid #1f1f56;
