@@ -854,6 +854,10 @@ textarea::placeholder {
   form p:first-child input:first-child {
     margin-bottom: 5px;
   }
+  button{
+    padding: 15px 20px;
+    font-size: 15px;
+  }
 }
 @media screen and (max-width:520px) {
   .flex .flex-between {
