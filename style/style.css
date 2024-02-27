@@ -163,8 +163,15 @@ a img {
 }
 .number {
   padding-left: 28px;
+  min-width: 198px;
 }
-
+.mail{
+  min-width: 174px;
+    /* padding-left: 28px; */ 
+}
+.m-30{
+  margin-left: 30px;
+}
 .number p,
 .mail p {
   margin: 0;
@@ -203,7 +210,7 @@ a img {
   content: "";
   position: absolute;
   top: -1px;
-  left: -30px;
+  left: -35px;
   width: 1px;
   height: 51px;
   background-color: #e4e4ec;
@@ -214,9 +221,6 @@ a img {
   height: 17px;
 }
 
-.mail {
-  padding-left: 28px;
-}
 
 .email::before {
   width: 18px;
@@ -456,11 +460,11 @@ aside {
 
 .footer-nav {
   display: flex;
+  min-width: 220px;
 }
 
 .footer-menu {
   margin: 0;
-  padding-right: 144px;
 }
 
 .footer-menu a {
@@ -710,6 +714,9 @@ textarea::placeholder {
   .stick:before {
     display: none;
   }
+  .hero {
+    width: 80%;
+  }
   .flex {
     flex-direction: column;
     gap: 20px;
@@ -718,7 +725,8 @@ textarea::placeholder {
     margin: 10px auto;
   }
   .flex-between {
-    column-gap: 100px;
+    column-gap: 20px;
+    row-gap: 15px;
   }
   .flex-main {
     flex-direction: column-reverse;
@@ -729,6 +737,13 @@ textarea::placeholder {
   .footer-menu {
     padding-right: 90px;
   }
+  .info-house {
+    justify-content: center;
+  }
+  .main_padding h2{
+    text-align: center;
+  }
+
 
   .back-color .flex-between {
     flex-wrap: wrap;
@@ -808,7 +823,7 @@ textarea::placeholder {
   transform: translateY(0) rotate(-45deg);
   }
   .header.open .menu{
-    transform: translateX(100%);
+    transform: translateX(330px);
   }
   .info-house {
     flex-wrap: wrap;
@@ -872,16 +887,13 @@ textarea::placeholder {
 }
 @media screen and (max-width:375px) {
   .back-color .flex-between {
-  flex-direction: column;
+    flex-direction: column;
     align-items: center;
   }
   .footer-nav {
     flex-direction: column;
   }
-  .number {
-    padding-right: 80px;
-  }
   .mail {
-    padding-right: 60px;
+    /* padding-right: 60px; */
   }
 }
