@@ -589,7 +589,7 @@ iframe {
   width: 100%;
   height: 100vh;
   border: none;
-  margin-top: -60px;
+  margin-top: -70px;
 }
 
 h3 {
@@ -602,6 +602,7 @@ h3 {
   box-sizing: border-box;
 }
 form {
+  margin: 0 auto;
   max-width: 480px;
   width: 100%;
 }
@@ -624,11 +625,11 @@ input{
   margin-bottom: 9px;
 }
 form input:first-child{
-  margin-right: 11px;
+  margin-right: 9px;
 }
 form input:first-child,
 form input:nth-child(2) {
-  width: 232px;
+  width: calc(50% - 7px);
 }
 
 textarea {
@@ -768,6 +769,9 @@ textarea::placeholder {
   .flex-revers label  {
     margin-bottom: 15px;
   }
+  form input:first-child {
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (max-width:778px) {
@@ -859,7 +863,7 @@ textarea::placeholder {
     font-size: 15px;
   }
 }
-@media screen and (max-width:520px) {
+@media screen and (max-width:539px) {
   .flex .flex-between {
     flex-direction: column;
     row-gap: 10px;
@@ -867,6 +871,13 @@ textarea::placeholder {
   .footer-menu {
     padding-right: 50px;
   }
+  form input:first-child{
+    margin-right: 0;
+  }
+  form input:first-child,
+  form input:nth-child(2) {
+  width: 100%;
+}
 }
 
 @media screen and (max-width:425px) {
@@ -884,9 +895,6 @@ textarea::placeholder {
   }
   form > p input {
     width: 100%;
-  }
-  form >p input:first-child {
-    margin-bottom: 4px;
   }
 }
 @media screen and (max-width:375px) {
