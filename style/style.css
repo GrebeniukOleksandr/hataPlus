@@ -72,7 +72,7 @@ hr {
 }
 
 .contacts {
-  padding: 30px 0;
+  padding: 30px 10px;
 }
 
 .contacts a {
@@ -86,10 +86,13 @@ hr {
 .header {
   background-color: #1f1f56;
 }
-
+.burger {
+  display: none;
+}
 .menu {
   display: flex;
   align-items: center;
+  margin-left: 10px;
 }
 
 .header li {
@@ -115,6 +118,7 @@ hr {
 .social {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .social a {
@@ -710,6 +714,9 @@ textarea::placeholder {
     flex-direction: column;
     gap: 20px;
   }
+  .main-width{
+    margin: 10px auto;
+  }
   .flex-between {
     column-gap: 100px;
   }
@@ -719,13 +726,17 @@ textarea::placeholder {
   .main_padding {
   margin: 30px;
   }
+  .footer-menu {
+    padding-right: 90px;
+  }
+
   .back-color .flex-between {
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 5px;
   }
   .social {
-    margin: 20px 10px 0 0;
+    margin-right: 10px;
   }
 
   .main h1 {
@@ -736,16 +747,17 @@ textarea::placeholder {
       justify-content: space-around;
     }
   .flex-revers {
-           display: flex;
-           flex-direction: column-reverse;
-         }
+        display: flex;
+        flex-direction: column-reverse;
+      }
   .flex-revers label  {
     margin-bottom: 15px;
   }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:778px) {
   .burger {
+    display: block;
     position: relative;
     width: 40px;
     height: 40px;
@@ -772,7 +784,7 @@ textarea::placeholder {
     position: absolute;
     padding:40px 80px 40px 40px;
     width: 200px;
-    left: -320px;
+    left: -340px;
     top: -16px;
     text-align: left;
     transition: transform 1s;
@@ -828,15 +840,21 @@ textarea::placeholder {
     margin-bottom: 5px;
   }
 }
+@media screen and (max-width:520px) {
+  .flex .flex-between {
+    flex-direction: column;
+    row-gap: 10px;
+  }
+  .footer-menu {
+    padding-right: 50px;
+  }
+}
 
 @media screen and (max-width:425px) {
   .social {
     justify-content: end;
   }
-  .flex .flex-between {
-    flex-direction: column;
-    row-gap: 10px;
-  }
+  
   .main_padding {
     margin: 10px 5px;
     padding: 0;
