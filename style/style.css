@@ -165,11 +165,11 @@ a img {
   padding-left: 28px;
   min-width: 198px;
 }
-.mail{
+.mail {
   min-width: 174px;
-    /* padding-left: 28px; */ 
+  /* padding-left: 28px; */
 }
-.m-30{
+.m-30 {
   margin-left: 30px;
 }
 .number p,
@@ -220,7 +220,6 @@ a img {
   width: 17px;
   height: 17px;
 }
-
 
 .email::before {
   width: 18px;
@@ -533,7 +532,6 @@ tr:hover td {
   cursor: pointer;
 }
 
-
 /* contacts */
 .main-contact > h2 {
   margin: 0;
@@ -598,7 +596,7 @@ h3 {
 }
 
 .form {
-  width:50%;
+  width: 50%;
   box-sizing: border-box;
 }
 form {
@@ -621,10 +619,10 @@ textarea {
 form button {
   max-width: 156px;
 }
-input{
+input {
   margin-bottom: 9px;
 }
-form input:first-child{
+form input:first-child {
   margin-right: 9px;
 }
 form input:first-child,
@@ -711,7 +709,7 @@ textarea::placeholder {
   border-bottom: 2px solid #1f1f56;
   transform: rotate(-45deg);
 }
-@media screen and (max-width:960px) {
+@media screen and (max-width: 960px) {
   .stick:before {
     display: none;
   }
@@ -722,7 +720,7 @@ textarea::placeholder {
     flex-direction: column;
     gap: 20px;
   }
-  .main-width{
+  .main-width {
     margin: 10px auto;
   }
   .flex-between {
@@ -733,7 +731,7 @@ textarea::placeholder {
     flex-direction: column-reverse;
   }
   .main_padding {
-  margin: 30px;
+    margin: 30px;
   }
   .footer-menu {
     padding-right: 90px;
@@ -741,10 +739,16 @@ textarea::placeholder {
   .info-house {
     justify-content: center;
   }
-  .main_padding h2{
+  .main_padding h2 {
     text-align: center;
   }
-
+  .form input:first-child {
+    margin-bottom: 9px;
+  }
+  .form input:first-child,
+  .form input:nth-child(2) {
+    width: 100%;
+  }
 
   .back-color .flex-between {
     flex-wrap: wrap;
@@ -758,15 +762,15 @@ textarea::placeholder {
   .main h1 {
     text-align: center;
   }
-    .main-nav {
-      flex-wrap: wrap;
-      justify-content: space-around;
-    }
+  .main-nav {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
   .flex-revers {
-        display: flex;
-        flex-direction: column-reverse;
-      }
-  .flex-revers label  {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .flex-revers label {
     margin-bottom: 15px;
   }
   form input:first-child {
@@ -774,7 +778,7 @@ textarea::placeholder {
   }
 }
 
-@media screen and (max-width:778px) {
+@media screen and (max-width: 778px) {
   .burger {
     display: block;
     position: relative;
@@ -783,16 +787,16 @@ textarea::placeholder {
     margin: 10px;
     z-index: 2;
   }
-  .burger span{
+  .burger span {
     position: absolute;
     top: 19px;
     left: 5px;
     width: 30px;
     height: 3px;
     background-color: #b1b1d2;
-    transition: transform .7s;
+    transition: transform 0.7s;
   }
-  .burger span:first-child{
+  .burger span:first-child {
     transform: translateY(10px);
   }
   .burger span:last-child {
@@ -801,7 +805,7 @@ textarea::placeholder {
   .menu {
     display: block;
     position: absolute;
-    padding:40px 80px 40px 40px;
+    padding: 40px 80px 40px 40px;
     width: 200px;
     left: -340px;
     top: -16px;
@@ -817,16 +821,16 @@ textarea::placeholder {
     display: block;
     font-size: 21px;
   }
-  .header.open .burger span:nth-child(2){
+  .header.open .burger span:nth-child(2) {
     opacity: 0;
   }
-  .header.open .burger span:first-child{
-  transform: translateY(0) rotate(45deg);
+  .header.open .burger span:first-child {
+    transform: translateY(0) rotate(45deg);
   }
-  .header.open .burger span:last-child{
-  transform: translateY(0) rotate(-45deg);
+  .header.open .burger span:last-child {
+    transform: translateY(0) rotate(-45deg);
   }
-  .header.open .menu{
+  .header.open .menu {
     transform: translateX(330px);
   }
   .info-house {
@@ -836,11 +840,13 @@ textarea::placeholder {
     width: 97vw;
     overflow-x: auto; /* Горизонтальный скролл */
   }
-
   table {
     min-width: 760px;
     overflow-x: scroll;
     white-space: nowrap;
+  }
+  .map {
+    margin-bottom: 20px;
   }
   .main-form {
     flex-direction: column;
@@ -858,12 +864,12 @@ textarea::placeholder {
   form p:first-child input:first-child {
     margin-bottom: 5px;
   }
-  button{
+  button {
     padding: 15px 20px;
     font-size: 15px;
   }
 }
-@media screen and (max-width:539px) {
+@media screen and (max-width: 539px) {
   .flex .flex-between {
     flex-direction: column;
     row-gap: 10px;
@@ -871,20 +877,20 @@ textarea::placeholder {
   .footer-menu {
     padding-right: 50px;
   }
-  form input:first-child{
+  form input:first-child {
     margin-right: 0;
   }
   form input:first-child,
   form input:nth-child(2) {
-  width: 100%;
-}
+    width: 100%;
+  }
 }
 
-@media screen and (max-width:425px) {
+@media screen and (max-width: 425px) {
   .social {
     justify-content: end;
   }
-  
+
   .main_padding {
     margin: 10px 5px;
     padding: 0;
@@ -897,15 +903,12 @@ textarea::placeholder {
     width: 100%;
   }
 }
-@media screen and (max-width:375px) {
+@media screen and (max-width: 375px) {
   .back-color .flex-between {
     flex-direction: column;
     align-items: center;
   }
   .footer-nav {
     flex-direction: column;
-  }
-  .mail {
-    /* padding-right: 60px; */
   }
 }
