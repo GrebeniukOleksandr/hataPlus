@@ -210,7 +210,7 @@ a img {
   content: "";
   position: absolute;
   top: -1px;
-  left: -35px;
+  left: -60px;
   width: 1px;
   height: 51px;
   background-color: #e4e4ec;
@@ -318,6 +318,7 @@ a img {
 
 .info-house {
   display: flex;
+  flex-wrap: wrap;
   column-gap: 25px;
 }
 
@@ -837,13 +838,14 @@ textarea::placeholder {
     flex-wrap: wrap;
   }
   article {
-    width: 97vw;
+    width: calc(100vw - 60px);
     overflow-x: auto; /* Горизонтальный скролл */
   }
   table {
     min-width: 760px;
     overflow-x: scroll;
     white-space: nowrap;
+
   }
   .map {
     margin-bottom: 20px;
@@ -890,7 +892,9 @@ textarea::placeholder {
   .social {
     justify-content: end;
   }
-
+  article {
+    width: calc(100vw - 10px);
+  }
   .main_padding {
     margin: 10px 5px;
     padding: 0;
