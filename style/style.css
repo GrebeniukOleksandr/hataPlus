@@ -88,6 +88,8 @@ hr {
 .social {
   display: flex;
   align-items: center;
+  position: relative;
+  z-index: 11;
 }
 
 .header__menu li,
@@ -831,8 +833,41 @@ textarea::placeholder {
 
 
 @media screen and (max-width: 778px) {
+  .header {
+    position: relative;
+  }
+
   .header__menu {
     display: none;
+    position: absolute;
+    z-index: 10;
+  }
+
+  .header.open .header__menu {
+    display: block;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 40px 0;
+    background-color: #1f1f56;
+  }
+  .header.open .header__menu li{
+    padding-right: 0;
+  }
+  .header.open .header__menu li a{
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    transition: all .5s ease;
+  }
+
+  .header.open .header__menu li:hover {
+    background-color: #fd8300;
+  }
+
+  .header.open .header__menu li:hover a {
+    color: #fff;
+    display: block;
   }
 
   .burger {
@@ -841,7 +876,7 @@ textarea::placeholder {
     width: 40px;
     height: 40px;
     margin: 10px;
-    z-index: 2;
+    z-index: 11;
   }
 
   .burger span {
@@ -920,14 +955,13 @@ textarea::placeholder {
     width: 100%;
   }
 
-  box-btn {
+  .box-btn {
     display: flex;
     flex-direction: column;
   }
 
   .form-button {
-    margin-top: 10px;
-    margin-right: 0;
+    margin: 15px 0;
   }
 
   .myinput+label {
