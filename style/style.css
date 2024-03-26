@@ -851,10 +851,12 @@ textarea::placeholder {
     padding: 40px 0;
     background-color: #1f1f56;
   }
-  .header.open .header__menu li{
+
+  .header.open .header__menu li {
     padding-right: 0;
   }
-  .header.open .header__menu li a{
+
+  .header.open .header__menu li a {
     display: block;
     width: 100%;
     padding: 15px 0;
@@ -967,39 +969,42 @@ textarea::placeholder {
   .myinput+label {
     order: -1;
   }
-}
-
-@media screen and (max-width: 425px) {
-  .social {
-    justify-content: end;
-  }
 
   .main_padding {
-    margin: 10px 5px;
-    padding: 0;
+    padding-bottom: 30px;
   }
 
-  .main-nav {
-    justify-content: space-between;
-    align-items: center;
+  @media screen and (max-width: 425px) {
+    .social {
+      justify-content: end;
+    }
+
+    .main_padding {
+      margin: 10px 5px;
+      padding: 0;
+    }
+
+    .main-nav {
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    form>p input {
+      width: 100%;
+    }
   }
 
-  form>p input {
-    width: 100%;
-  }
-}
+  @media screen and (max-width: 375px) {
+    .back-color .flex-between {
+      flex-direction: column;
+      align-items: center;
+    }
 
-@media screen and (max-width: 375px) {
-  .back-color .flex-between {
-    flex-direction: column;
-    align-items: center;
-  }
+    .back-color .number {
+      padding-left: 0;
+    }
 
-  .back-color .number {
-    padding-left: 0;
+    .footer-nav {
+      flex-direction: column;
+    }
   }
-
-  .footer-nav {
-    flex-direction: column;
-  }
-}
