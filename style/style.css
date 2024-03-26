@@ -540,7 +540,9 @@ tr:hover td {
 .main-nav ul:last-child {
   padding-right: 100px;
 }
-
+.map {
+  overflow: hidden;
+}
 .main-menu li {
   padding-top: 14px;
   color: #666666;
@@ -562,6 +564,7 @@ tr:hover td {
 
 iframe {
   border: none;
+  margin-top: -60px;
 }
 
 h3 {
@@ -682,7 +685,7 @@ textarea::placeholder {
   .figure {
     margin-bottom: 15px;
   }
-
+ 
   .house h3 {
     margin: 3px 0;
   }
@@ -737,15 +740,7 @@ textarea::placeholder {
   .main_padding h2 {
     text-align: center;
   }
-
-  .form input:first-child {
-    margin-bottom: 9px;
-  }
-
-  .form input:first-child,
-  .form input:nth-child(2) {
-    width: 100%;
-  }
+ 
 
   .back-color .flex-between {
     flex-wrap: wrap;
@@ -793,6 +788,7 @@ textarea::placeholder {
   }
 
   .map {
+    overflow: hidden;
     margin-bottom: 20px;
   }
 
@@ -812,23 +808,31 @@ textarea::placeholder {
     width: 100%;
   }
 
-  form p:first-child input {
+  form p:first-child {
+    display: flex;
+    column-gap: 8px;
+  }
+  form p:first-child label{
+    width: 475px
+  }
+  form p:first-child input{
+    width: 100%;
+  }
+  form p:nth-child(2) input, 
+  textarea{
     width: 100%;
   }
 
   form p:first-child input:first-child {
     margin-bottom: 5px;
   }
-
   textarea {
     width: 100%;
   }
-
   button {
     padding: 15px 20px;
     font-size: 15px;
   }
-
 }
 
 
@@ -973,7 +977,14 @@ textarea::placeholder {
   .main_padding {
     padding-bottom: 30px;
   }
-
+  form p:first-child {
+    display: flex;
+    flex-direction: column;
+  }
+  form p:first-child label{
+    width: auto;
+  }
+}
   @media screen and (max-width: 425px) {
     .social {
       justify-content: end;
@@ -988,23 +999,25 @@ textarea::placeholder {
       justify-content: space-between;
       align-items: center;
     }
-
     form>p input {
       width: 100%;
     }
+  form p:first-child {
+    display: flex;
+    column-gap: 8px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .back-color .flex-between {
+    flex-direction: column;
+    align-items: center;
   }
 
-  @media screen and (max-width: 375px) {
-    .back-color .flex-between {
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .back-color .number {
-      padding-left: 0;
-    }
-
-    .footer-nav {
-      flex-direction: column;
-    }
+  .back-color .number {
+    padding-left: 0;
   }
+
+  .footer-nav {
+    flex-direction: column;
+  }
+}
